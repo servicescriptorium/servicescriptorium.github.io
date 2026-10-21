@@ -1,0 +1,97 @@
+/* Animated setup guides (kurulum.html). Stage is laid out at 1600x900 and scaled to fit. */
+.guide-anim { position: relative; width: 100%; max-width: 980px; margin: 22px 0 8px; }
+.ga-box { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 16px; border: 1px solid var(--line, #262b4d); background: #0b0e1c; box-shadow: 0 24px 60px rgba(0,0,0,.35); }
+.ga-stage { position: absolute; left: 0; top: 0; width: 1600px; height: 900px; transform-origin: 0 0; font-family: var(--body, "Jakarta", system-ui, sans-serif); color: #eef0ff; background: radial-gradient(1200px 700px at 85% -10%, rgba(138,123,255,.18), transparent 60%), radial-gradient(900px 600px at -10% 110%, rgba(232,121,249,.10), transparent 60%), #0b0e1c; }
+.ga-layer { position: absolute; inset: 0; opacity: 0; }
+.ga-el { position: absolute; box-sizing: border-box; display: flex; align-items: center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-size: 22px; line-height: 1.2; }
+
+/* window frames */
+.ga-win { border-radius: 18px; border: 1px solid #2a3060; background: #12152a; box-shadow: 0 30px 80px rgba(0,0,0,.45); }
+.ga-win.light { background: #f6f7fb; border-color: #d9dcea; }
+.ga-bar { border-bottom: 1px solid #2a3060; padding: 0 22px; gap: 14px; color: #a9aed3; font-size: 20px; }
+.ga-win.light .ga-bar, .ga-bar.light { border-color: #dfe2ee; color: #5b6078; }
+.ga-dots { display: inline-flex; gap: 9px; margin-right: 10px; }
+.ga-dots i { width: 13px; height: 13px; border-radius: 50%; background: #3a4072; display: block; }
+.ga-bar.light .ga-dots i { background: #c9cde0; }
+.ga-url { flex: 1; height: 40px; border-radius: 20px; background: #0c0f20; border: 1px solid #262b4d; display: flex; align-items: center; padding: 0 20px; color: #cfd2ee; font-size: 19px; }
+.ga-bar.light .ga-url { background: #fff; border-color: #dfe2ee; color: #3a3f58; }
+.ga-apptitle { font-weight: 700; color: #eef0ff; letter-spacing: .02em; }
+.ga-apptitle b { background: linear-gradient(90deg,#8a7bff,#e879f9); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+.ga-side { background: rgba(255,255,255,.02); border-right: 1px solid #262b4d; border-bottom-left-radius: 17px; }
+.ga-side.light { background: #eef0f7; border-color: #dfe2ee; }
+.ga-item { padding: 0 20px; border-radius: 12px; color: #c9cdf0; font-size: 21px; }
+.ga-item.light { color: #3a3f58; }
+.ga-item.on { background: rgba(138,123,255,.18); color: #fff; font-weight: 700; }
+.ga-item.light.on { background: #e1e3f6; color: #1d2140; }
+.ga-sub { padding-left: 46px; font-size: 19px; }
+
+.ga-h { font-size: 34px; font-weight: 800; font-family: var(--display, "BrandDisplay", system-ui, sans-serif); color: #fff; }
+.ga-h.light { color: #1d2140; }
+.ga-text { color: #a9aed3; font-size: 21px; white-space: normal; align-items: flex-start; }
+.ga-text.light { color: #5b6078; }
+.ga-label { color: #cfd2ee; font-size: 20px; font-weight: 600; }
+.ga-label.light { color: #3a3f58; }
+.ga-field { border-radius: 12px; border: 1px solid #2f3566; background: #0c0f20; padding: 0 18px; color: #eef0ff; font-size: 21px; font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; }
+.ga-field.light { background: #fff; border-color: #cfd3e6; color: #1d2140; }
+.ga-field .ph { color: #6c7199; font-family: var(--body, system-ui, sans-serif); }
+.ga-field .caret { display: inline-block; width: 2px; height: 26px; background: #e879f9; margin-left: 2px; }
+.ga-select { font-family: var(--body, "Jakarta", system-ui, sans-serif); }
+.ga-select::after { content: ""; position: absolute; right: 18px; top: 50%; width: 10px; height: 10px; border-right: 3px solid #8a8fbf; border-bottom: 3px solid #8a8fbf; transform: translateY(-70%) rotate(45deg); }
+.ga-btn { justify-content: center; border-radius: 12px; font-weight: 700; font-size: 21px; border: 1px solid #343a6e; background: #1a1e3a; color: #eef0ff; }
+.ga-btn.primary { border: 0; background: linear-gradient(90deg,#6f7bff,#c779f9); color: #fff; }
+.ga-btn.light { background: #fff; border-color: #cfd3e6; color: #1d2140; }
+.ga-btn.blue { border: 0; background: #2f6fe4; color: #fff; }
+.ga-btn.link { background: none; border: 0; color: #9db7ff; text-decoration: underline; justify-content: flex-start; padding: 0; font-weight: 600; }
+.ga-btn.link.light { color: #2a5bd7; }
+.ga-row { border-bottom: 1px solid #262b4d; padding: 0 6px; gap: 16px; color: #dfe2ff; font-size: 21px; }
+.ga-row.light { border-color: #e2e5f0; color: #2a2f4a; }
+.ga-badge { justify-content: center; gap: 8px; border-radius: 999px; font-weight: 700; font-size: 19px; padding: 0 16px; }
+.ga-badge.ok { background: rgba(61,220,151,.15); color: #3ddc97; }
+.ga-badge.warn { background: rgba(242,179,90,.16); color: #f2b35a; }
+.ga-badge.err { background: rgba(248,113,113,.16); color: #f87171; }
+.ga-badge.light.ok { background: #dcf7ea; color: #13804f; }
+.ga-dialog { border-radius: 18px; background: #161a33; border: 1px solid #3a4180; box-shadow: 0 30px 90px rgba(0,0,0,.6); }
+.ga-dialog.light { background: #fff; border-color: #cfd3e6; }
+.ga-dialog.win { border-radius: 6px; background: #1f5fbf; border: 0; }
+.ga-wintext { color: #fff; white-space: normal; align-items: flex-start; font-size: 22px; }
+.ga-wintitle { color: #fff; font-size: 36px; font-weight: 600; white-space: normal; align-items: flex-start; }
+.ga-progress { border-radius: 8px; background: #22284d; }
+.ga-progress > i { display: block; height: 100%; border-radius: 8px; background: linear-gradient(90deg,#6f7bff,#e879f9); }
+.ga-file { gap: 14px; border-radius: 10px; font-size: 21px; color: #dfe2ff; padding: 0 16px; }
+.ga-file i { width: 34px; height: 34px; border-radius: 8px; background: linear-gradient(135deg,#8a7bff,#e879f9); display: block; flex: none; }
+.ga-wave { gap: 6px; justify-content: flex-start; }
+.ga-wave i { display: block; width: 8px; border-radius: 4px; background: linear-gradient(180deg,#e879f9,#8a7bff); }
+.ga-veil { background: rgba(5,7,16,.55); }
+
+/* states changed during a step */
+.ga-el.hidden { opacity: 0; }
+
+/* cursor, click ripple and target highlight */
+.ga-ring { position: absolute; border-radius: 14px; border: 3px solid #e879f9; box-shadow: 0 0 0 8px rgba(232,121,249,.18); pointer-events: none; opacity: 0; }
+.ga-ripple { position: absolute; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%; border: 4px solid rgba(255,255,255,.9); opacity: 0; pointer-events: none; }
+.ga-cursor { position: absolute; width: 36px; height: 44px; margin: -2px 0 0 -4px; pointer-events: none; filter: drop-shadow(0 4px 8px rgba(0,0,0,.55)); }
+
+/* caption band */
+.ga-cap { position: absolute; left: 0; right: 0; bottom: 0; height: 150px; display: flex; align-items: center; gap: 26px; padding: 0 70px; background: linear-gradient(180deg, rgba(9,11,19,0) 0%, rgba(9,11,19,.88) 32%, rgba(9,11,19,.96) 100%); }
+.ga-step { flex: none; min-width: 78px; padding: 0 14px; height: 78px; border-radius: 22px; display: grid; place-items: center; font-weight: 800; font-size: 30px; color: #fff; background: linear-gradient(135deg,#7b6dff,#d86cf2); font-family: var(--display, system-ui, sans-serif); }
+.ga-captext { font-size: 33px; line-height: 1.28; font-weight: 600; color: #fff; text-wrap: balance; }
+
+/* title / end cards */
+.ga-card { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; text-align: center; opacity: 0; }
+.ga-card .k { font-size: 26px; color: #c9b9ff; letter-spacing: .04em; font-weight: 600; }
+.ga-card .t { font-size: 78px; font-weight: 900; font-family: var(--display, system-ui, sans-serif); line-height: 1.05; background: linear-gradient(90deg,#fff,#e8dcff); -webkit-background-clip: text; background-clip: text; color: transparent; max-width: 1300px; }
+.ga-card .s { font-size: 30px; color: #a9aed3; max-width: 1150px; }
+.ga-card .ok { width: 120px; height: 120px; border-radius: 50%; display: grid; place-items: center; background: rgba(61,220,151,.15); color: #3ddc97; font-size: 70px; font-weight: 900; }
+.ga-logo { width: 74px; height: 74px; border-radius: 22px; background: linear-gradient(135deg,#7b6dff,#e879f9); box-shadow: 0 16px 40px rgba(138,123,255,.4); }
+
+/* player controls */
+.ga-ctl { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+.ga-ctl button { appearance: none; border: 1px solid var(--line, #262b4d); background: var(--deck, #0f1222); color: var(--ink, #eef0ff); border-radius: 10px; height: 38px; min-width: 42px; padding: 0 12px; font: 600 15px var(--body, system-ui, sans-serif); cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+.ga-ctl button:hover { border-color: #8a7bff; }
+.ga-ctl button:focus-visible { outline: 2px solid #e879f9; outline-offset: 2px; }
+.ga-track { flex: 1; height: 8px; border-radius: 6px; background: var(--deck-2, #151936); cursor: pointer; position: relative; }
+.ga-track > i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 6px; background: linear-gradient(90deg,#8a7bff,#e879f9); }
+.ga-time { font-variant-numeric: tabular-nums; color: var(--mute, #a9aed3); font-size: 14px; min-width: 86px; text-align: right; }
+.ga-static { margin: 14px 0 0; padding-left: 22px; color: var(--mute, #a9aed3); }
+.ga-static li { margin: 6px 0; }

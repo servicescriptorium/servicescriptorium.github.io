@@ -1,0 +1,38 @@
+{
+"creatorMonthly": "",
+"creatorYearly": "",
+"proMonthly": {
+"tr": "₺1.249 / ay",
+"en": "₺1,249 / month",
+"de": "₺1.249 / Monat",
+"es": "₺1.249 / mes",
+"fr": "₺1 249 / mois",
+"pt": "₺1.249 / mês"
+},
+"proYearly": {
+"tr": "₺12.490 / yıl",
+"en": "₺12,490 / year",
+"de": "₺12.490 / Jahr",
+"es": "₺12.490 / año",
+"fr": "₺12 490 / an",
+"pt": "₺12.490 / ano"
+},
+"yearlyNote": {
+"tr": "2 ay bedava",
+"en": "2 months free",
+"de": "2 Monate gratis",
+"es": "2 meses gratis",
+"fr": "2 mois offerts",
+"pt": "2 meses grátis"
+},
+"trialDays": 7,
+"trialVideos": 3,
+"currencyNote": {
+"tr": "Yurt dışından kartla ödemede tutar, ödeme sayfasında kendi para biriminizde gösterilir.",
+"en": "Paying by card from abroad? The checkout page shows the exact amount in your own currency.",
+"de": "Bei Kartenzahlung aus dem Ausland zeigt die Bezahlseite den genauen Betrag in deiner Währung.",
+"es": "Si pagas con tarjeta desde el extranjero, la página de pago muestra el importe exacto en tu moneda.",
+"fr": "Paiement par carte depuis l'étranger : la page de paiement affiche le montant exact dans ta devise.",
+"pt": "Pagando com cartão do exterior? A página de pagamento mostra o valor exato na sua moeda."
+}
+}
